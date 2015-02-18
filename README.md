@@ -2,13 +2,18 @@
 
 ## Prerequisites (Ubuntu 14.04)
 
-* `apt-get install -y build-essential curl`
-* `curl -sL https://deb.nodesource.com/setup | sudo bash -`
+* `sudo apt-get install -y build-essential curl`
+* `sudo apt-get install -y npm`
 * `sudo apt-get install -y nodejs`
+* `npm install -g n`
+* `n latest`
+* Add this to your ~/.bashrc - `export PATH=$PATH:/usr/local/n/versions/0.12.0/bin/node`
+* Reload current terminal session - `. ~/.bashrc`
+* Run `node -v` (Should be v0.12.0)
 
 ## Project Setup
 
-* `git clone https://nitinione@bitbucket.org/nitinione/notifications_demo.git`
+* `git clone git@bitbucket.org:nitinione/notifications_demo.git`
 * `cd notifications_demo`
 * `npm install`
 * `npm start` (Will start the server at port 3000)

@@ -26,6 +26,14 @@
   `curl -v -H "Content-type: application/json" -H "x-access-token: very_secret_token" -X POST http://localhost:3000/broadcast -d '{"username":"Your Name", "news":"Say something here..."}'`
 * Again check the browser's console for new messages.
 
+## Load testing (with **wrk**)
+
+* git clone https://github.com/wg/wrk.git
+* make
+* sudo cp wrk /usr/local/bin
+* wrk -d30s -t10 -c1000 http://localhost:3000
+* top -c -p $(pgrep -d',' -f /usr/local/bin/node)
+
 ## License
 
 This project rocks under MIT

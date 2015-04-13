@@ -23,7 +23,7 @@
 * Go to `http://localhost:3000`
 * Open browser's console and see the log messages.
 * Hit this curl command to send more notifications to the client -
-  `curl -v -H "Content-type: application/json" -H "x-access-token: very_secret_token" -X POST http://localhost:3000/broadcast -d '{"username":"Your Name", "news":"Say something here..."}'`
+  `curl -v -H "Content-type: application/json" -H "x-access-token: very_secret_token" -X POST http://localhost:3000/broadcast -d '{"username":"Your Name", "message":"Say something here..."}'`
 * Again check the browser's console for new messages.
 
 ## Load testing (with **wrk**)
